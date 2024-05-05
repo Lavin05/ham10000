@@ -1,0 +1,27 @@
+Skin Cancer Prediction System
+This project implements a skin cancer prediction system that utilizes state-of-the-art deep learning models including Xception, DenseNet, and ResNet. These models are compared in terms of performance and integrated into an interactive frontend website for user-friendly access.
+Overview
+Skin cancer is a prevalent form of cancer, and early detection is crucial for effective treatment. This system leverages deep learning models trained on dermatoscopic images to predict whether a skin lesion is malignant or benign.
+Models Used
+1. Xception
+Description: Xception is a deep convolutional neural network architecture known for its depthwise separable convolutions, offering improved computational efficiency and parameter reduction while maintaining performance.
+Usage: Xception model is employed for skin cancer prediction due to its high accuracy and efficiency in image classification tasks.
+2. DenseNet
+Description: DenseNet is a densely connected convolutional neural network architecture characterized by dense connections between layers, facilitating feature reuse, enhancing gradient flow, and improving learning efficiency.
+Usage: DenseNet model is utilized for skin cancer prediction to exploit its ability to capture fine-grained features and alleviate the vanishing-gradient problem.
+3. ResNet
+Description: ResNet (Residual Network) is a deep neural network architecture featuring skip connections, enabling the training of very deep networks by mitigating the vanishing-gradient problem.
+Usage: ResNet model is included in the comparison to evaluate its performance in skin cancer prediction tasks against more recent architectures like Xception and DenseNet.
+Frontend Website
+The skin cancer prediction system is integrated into an interactive frontend website to provide a user-friendly interface for users to upload skin lesion images and receive predictions. The website allows users to compare predictions from different models and explore additional information about skin cancer.
+Usage
+1.Upload Image: Users can upload a dermatoscopic image of a skin lesion via the frontend website.
+2.Prediction: The uploaded image is processed by the selected deep learning model (Xception, DenseNet, or ResNet) to predict whether the skin lesion is malignant or benign.
+3.Comparison: Users can compare predictions from different models to assess their performance and reliability.
+4.Additional Information: The website provides additional information about skin cancer, risk factors, and preventive measures to educate users about the importance of early detection and prevention.
+Dependencies
+Python 3.x
+TensorFlow
+Keras
+Flask
+HTML/CSS/JavaScript (for the frontend)
