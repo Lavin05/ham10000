@@ -1,0 +1,127 @@
+.img-preview {
+    width: 256px;
+    height: 256px;
+    position: relative;
+    border: 5px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+    margin-bottom: 1em;    
+}
+.lavin{
+align-content: center;
+}
+.img-preview>div {
+    width: 100%;
+    height: 100%;
+    background-size: 256px 256px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.upload-label{
+    display: inline-block;
+    padding: 12px 30px;
+    background: #ff3157;
+    color: #fff;
+    font-size: 1em;
+    transition: all .4s;
+    cursor: pointer;
+}
+
+
+.upload-label:hover{
+    background: #34495E;
+    color: #39D2B4;
+}
+
+.loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    display: inline-flex;
+}
+.container1 {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px; /* Adjust the maximum width as needed */
+    padding-left: 15px; /* Adjust left padding for better spacing */
+    padding-right: 15px; /* Adjust right padding for better spacing */
+}.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px;
+    border: 10px solid #ccc; /* Default grey color */
+}
+
+.circle.active {
+    border-color: #ff3157; /* Pink color when active */
+}
+
+.circle::before,
+.circle::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 20px); /* Adjust width to account for padding */
+    height: calc(100% - 20px); /* Adjust height to account for padding */
+    border-radius: 50%;
+    border: 10px solid transparent; /* Transparent border */
+}
+
+.circle::before {
+    border-color: transparent;
+}
+
+.circle::after {
+    /* border-color: #ff3157; Pink color when active */
+    transform: rotate(45deg); /* Rotate the second circle to complete the donut shape */
+}
+.circular-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .circular-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+  }
+
+  
+
+.tile {
+    height: 400px;
+    padding: 20px;
+    margin-top: 20px;
+    display: none; /* Hide by default */
+}
+.tile.active {
+    display: block; /* Display when active */
+}
+.tile img {
+    max-width: 100%;
+}
+.lavin{
+  text-align: center;
+
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
