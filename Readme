@@ -1,1 +1,11 @@
-![Landing Page](https://github.com/Lavin05/ham10000/blob/main/images/1.png?raw=true)
+In this repository, three CNN models are present, Xception, Resnet and Densenet, each are trained on HAM10000 skin cancer dataset, templates folder has html files.
+Steps to run the project:
+1. clone the repository
+2. run the neccesary ipnb files of your choice to train the model,
+3. when you have the trained model copy its path to the app.py which is the backend of the poject
+4. run it and the project will go live.
+
+
+for any queries, feel free to mail me on lavinrupani8@gmail.com
+credits for the frontend design: https://github.com/ADITYAVOFFICIAL
+
